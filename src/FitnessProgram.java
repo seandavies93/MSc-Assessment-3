@@ -8,7 +8,8 @@ import java.util.*;
  * The methods allow objects to be added and deleted from the list
  * In addition an array can be returned in order of average attendance
  */
-//class suggested in assessment template code implemented by Sean Davies
+//class suggested in assessment template
+//all internal code written by Sean Davies
 public class FitnessProgram {
     
 	//variable declarations
@@ -39,12 +40,10 @@ public class FitnessProgram {
 	//takes an attendance log extracted from the attendance file and adds it to the appropriate class in the FitnessProgram 
 	public void updateProgramAttendances(String[] attendancelog)
 	{			
-		
 		for(int i=0; i<MAXCLASSES; i++)
 		{
 				if((this.program[i].getID().equals(attendancelog[0])))
 				{
-					
 					this.program[i].setAttendances(attendancelog);
 				}
 		}
@@ -77,7 +76,7 @@ public class FitnessProgram {
 		this.program[fitin.getStartTime()-9].setStartTime(fitin.getStartTime());
 		
 	}
-	//deletes a fitness program at the specified index
+	//deletes a fitness program at the specified index (slotnum)
 	public void deleteFitnessClass(int slotnum)
 	{
 		this.program[slotnum].setID(" ");
@@ -93,6 +92,7 @@ public class FitnessProgram {
 			//set up a filewriter for the classesin file and the string that will be written to the file
 			FileWriter write=new FileWriter("classesIn.txt");
 			String classline="";
+			
 			for(int i=0; i<MAXCLASSES; i++)
 			{
 				if(this.program[i].getStartTime()!=-1)

@@ -4,7 +4,8 @@ import javax.swing.*;
 /**
  * Class to define window in which attendance report is displayed.
  */
-//class and gui layout included in assessment template code implemented by Sean Davies
+//class and gui layout included in assessment template
+//implementation by Sean Davies
 public class ReportFrame extends JFrame {
 	
         private JTextArea reportframe;

@@ -8,7 +8,8 @@ import java.io.*;
  * Defines a GUI that displays details of a FitnessProgram object
  * and contains buttons enabling access to the required functionality.
  */
-//class structure and gui included in template implemented by Sean Davies
+//class structure included in the given assessment template (methods and gui predefined)
+//implementation by Sean Davies
 public class SportsCentreGUI extends JFrame implements ActionListener {
 	
 	/** GUI JButtons */
